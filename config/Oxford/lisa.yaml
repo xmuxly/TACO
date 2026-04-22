@@ -1,0 +1,35 @@
+DATA:
+  data_name: Oxford
+  data_root: /home/xzk/HBM_slow/memtest/project/ # Fill in the data path
+  fea_dim: 3
+  max_volume_space: [60, 60, 6]
+  min_volume_space: [-60, -60, -2]
+  # 0.2
+  spatial_shape: [600, 600, 40]
+
+TRAIN:
+  # arch
+  arch: LiSA
+  input_c: 3
+  output_c: 3
+  scale_list: [2, 4, 8]
+  layers: [64, 128, 128, 256, 256, 512, 512, 512, 4096, 4096]
+  att_dim: 128
+
+  # training
+  gpu_id: 0
+  workers: 4  # data loader workers
+  batch_size: 50 # batch size for training
+  batch_size_val: 50  # batch size for validation during training, memory and speed tradeoff
+  base_lr: 0.01
+  decay_step: 1200
+  epochs: 60
+  start_epoch: 0
+  momentum: 0.9
+
+  manual_seed: 777
+  save_path: /home/xzk/HBM_slow/memtest/project/spconv_sgloc_0908/augment_Oxford/sgloc
+  weight:  # path to initial weight (default: none)
+  resume: /home/xzk/HBM_slow/memtest/project/spconv_sgloc_0908/augment_Oxford/sgloccheckpoint_epoch
+  threshold: 1.2
+  augment: True
