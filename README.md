@@ -2,9 +2,6 @@
   <h2 align="center">TACO: Task-Aware Contrastive Learning for Joint LiDAR Localization and 3D Object Detection</h2>
   <h3 align="center">CVPR 2026</h3>
 
-<div align="center">
-
-
 ## ⚙️ Environment
 ```bash
 conda create -n spconv2 python=3.8
@@ -74,11 +71,11 @@ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 -
 python Eval_Loc.py 
 python Eval_Det.py
 ```
-## 🌟 Visualization
+%## 🌟 Visualization
 
-## 🤗 Model zoo
+%## 🤗 Model zoo
 
-## 🙏 Acknowledgements
+%## 🙏 Acknowledgements
 
  We appreciate the code of [SGLoc](https://github.com/liw95/SGLoc/tree/main), [LiSA]()
 ## 🎓 Citation
