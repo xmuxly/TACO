@@ -2,6 +2,11 @@
   <h2 align="center">TACO: Task-Aware Contrastive Learning for Joint LiDAR Localization and 3D Object Detection</h2>
   <h3 align="center">CVPR 2026</h3>
 
+<div align="center">
+<a alighn="center" <img src='https://img.shields.io/badge/CVF-Paper-blue' alt='Paper PDF'></a>
+</p>
+</div>
+
 ## ⚙️ Environment
 ```bash
 conda create -n spconv2 python=3.8
